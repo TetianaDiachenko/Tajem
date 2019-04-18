@@ -30,9 +30,9 @@ function styles(){
 function scripts(){
 	return gulp.src('./src/js/**/*.js')
 	.pipe(uglify ())
-	.pipe(uglify({
-			toplevel: true
-		}))
+	// .pipe(uglify({
+	// 		toplevel: true
+	// 	}))
 	.pipe(gulp.dest('./dist/js'))
 	.pipe(browserSync.stream());
 }
@@ -78,7 +78,7 @@ function watch(){
     });
 
 	gulp.watch('./src/sass/**/*.scss', styles);
-	gulp.watch('./src/js/*.js', scripts);
+	gulp.watch('./src/js/**/*.js', scripts);
 	gulp.watch('./dist/*.html', browserSync.reload);
 }
 

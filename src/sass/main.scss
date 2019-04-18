@@ -65,6 +65,8 @@ body {
 	background: rgb(51,51,102) url('../img/screen1.jpg') no-repeat center;
 }
 .header__navbar {
+		display: flex;
+    	justify-content: space-between;
 		height: 80px;
 		line-height: 80px;
 		display: flex;
@@ -89,6 +91,81 @@ body {
 
 		}
 }
+                              /* MOB MENU*/
+.header__mobnav {
+  display: none;
+  z-index: 3;
+}
+.header__mobnav__button {
+  font-size: 50px;
+  font-weight: 900;
+  cursor:pointer;
+}
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: rgba(65, 46, 104, 1);
+  overflow-y: hidden;
+  transition: 0.5s;
+
+	.closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+	}
+	a {
+	   padding: 8px;
+	   text-decoration: none;
+	   font-size: 50px;
+	   color: #fff;
+	   text-transform: capitalize;
+	   display: block;
+	   transition: 0.3s;
+
+		&:hover, &:focus {
+		  color: #000;
+		}
+	}	
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 800px)  {
+	.header__navbar {
+		.header__navbar__menu {
+			display: none;
+		}
+	}
+	.header__mobnav {
+		display: block;
+	}
+} 
+@media screen and (max-height: 450px) {
+  .overlay {
+  	overflow-y: auto;
+
+	a {
+		font-size: 20px
+	}
+	.closebtn {
+	    font-size: 40px;
+	    top: 15px;
+	    right: 35px;
+	}
+  }  
+}                    
+                                  /* End of the MOB MENU*/                         
+
 .header__main {
 	text-align: center;
 	margin: 140px auto 0 auto;
@@ -127,7 +204,7 @@ body {
 	padding-top: 70px;
 
 	.container {
-		display: flex;	
+		display: flex;
 	}
 }
 .about__right {
@@ -585,7 +662,22 @@ footer {
 	}
 }
 
+@media screen and (max-width: 991px) {
+	.about__right {
+		padding-left: 30px;
+	}
+}
 
+@media screen and (max-width: 768px) {
+	.about {
+		.container {
+			display: block;
+		}
+		.about__left, .about__right  {
+			text-align: center;
+		}
+	}
+}
 
 
 
