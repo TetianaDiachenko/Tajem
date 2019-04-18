@@ -1,0 +1,1 @@
+$("#slider1").slick({slidesToShow:1,slidesToScroll:1,arrows:!1,dots:!0}),$("#slider2").slick({slidesToShow:1,slidesToScroll:1,focusOnSelect:!0,dots:!0,prevArrow:$(".people__nav_prev"),nextArrow:$(".people__nav_next")}),$(".video__button").click(function(){$(".video__button").toggleClass("none"),$(".video__watch").css("display","block")});

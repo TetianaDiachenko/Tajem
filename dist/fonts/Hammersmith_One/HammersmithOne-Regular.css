@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "HammersmithOne";
+    src: url("HammersmithOne-Regular.eot"); /* IE9 */
+    src: url("HammersmithOne-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("HammersmithOne-Regular.woff") format("woff"), /* chrome, firefox */
+    url("HammersmithOne-Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("HammersmithOne-Regular.svg#HammersmithOne") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
