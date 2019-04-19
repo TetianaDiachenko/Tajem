@@ -1,5 +1,8 @@
 @import "normalize";
-@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display|Roboto:100,400,700,900');
+@import "../fonts/Hammersmith_One/HammersmithOne-Regular.ttf";
+@import "../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf";
+@import "../fonts/Roboto/Roboto-Regular.ttf";
+/*@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display|Roboto:100,400,700,900');*/
 
 
 $font-size: 14px;
@@ -683,6 +686,9 @@ footer {
 	}
 	.contact__clients {
 		padding-left: 0;
+	}
+	.team__items_item {
+		margin: 0 50px;
 	}
 }
 @media screen and (max-width: 881px) {
