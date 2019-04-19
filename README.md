@@ -1,4 +1,4 @@
-Landing Tajem
+Landing Tajem from psd template
 
 Made by Gulp 4 + SCSS
 
