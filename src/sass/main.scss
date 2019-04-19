@@ -150,7 +150,7 @@ body {
 		display: block;
 	}
 } 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
   .overlay {
   	overflow-y: auto;
 
@@ -412,6 +412,7 @@ body {
 .works__items_item {
 	height: 200px;
 	width: 265px;
+	border: 1px solid $white;
 
 	&:nth-child(1),
 	&:nth-child(5),
@@ -501,6 +502,7 @@ body {
 .people__nav_prev,
 .people__nav_next {
 	position: relative;
+	cursor: pointer;
 	img {
 		width: 11px;
     	height: 21px;
@@ -627,8 +629,11 @@ footer {
 		button {
 			opacity: 0.502;
 			padding: 0;
-			/*margin-left: 10px;*/
 			cursor: pointer;
+
+			&:hover {
+				opacity: 1;
+			} 
 		}
 	}
 }
@@ -642,6 +647,7 @@ footer {
 	a:hover {
 		width: 35px;
 		height: 35px;
+		opacity: 0.502;
 	}
 }
 .bottom {
@@ -659,6 +665,10 @@ footer {
 		font-weight: bold;
 		display: block;
 		padding-right: 30px;
+
+		&:hover {
+			opacity: 0.502;
+		} 
 	}
 }
 
@@ -667,8 +677,33 @@ footer {
 		padding-left: 30px;
 	}
 }
-
+@media screen and (max-width: 979px) {
+	.expertise__items_item:nth-child(-n+4) {
+		border-bottom: 1px solid rgba(204, 204, 204, 0.749);
+	}
+	.contact__clients {
+		padding-left: 0;
+	}
+}
+@media screen and (max-width: 881px) {
+	.contact {
+		.container {
+			text-align: center;
+		}
+	}
+	.contact__form {
+		input, textarea {
+			width: 90%;
+		}
+		button {
+			margin: 10px auto 70px;
+		}
+	}
+}
 @media screen and (max-width: 768px) {
+	.container {
+		max-width: 750px;
+	}
 	.about {
 		.container {
 			display: block;
@@ -677,8 +712,54 @@ footer {
 			text-align: center;
 		}
 	}
+	.header__main {
+		padding: 0 30px;
+    	margin: 50px auto 0;
+	}
+	.works {
+		.container {
+			padding: 0 15px;
+		}
+	}
+	.people, footer {
+		.container {
+			padding: 0 15px;
+		}
+	}	
 }
-
+@media screen and (max-width: 659px) {
+	.expertise__items_item:nth-child(-n+5) {
+		border-bottom: 1px solid rgba(204, 204, 204, 0.749);
+	}	
+	.contact {
+		.container {
+			padding: 0 30px;
+		}
+	}
+	.content, .bottom {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	} 
+	.content__items__subscribe {
+		form {
+			input {
+				margin-left: 0;
+			} 
+		}
+	}
+}  
+@media screen and (max-width: 450px) {
+	    .people__nav_prev {
+	    	right: 120px;
+	    }
+	    .people__nav_next {
+	    	left: 165px;
+	    }
+	    .contact__clients__items_right {
+    		padding-left: 10px;
+	    }	
+}
 
 
 
