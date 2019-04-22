@@ -67,18 +67,18 @@ body {
 	height: 670px;
 	background: rgb(51,51,102) url('../img/screen1.jpg') no-repeat center;
 }
-.header__navbar {
+.navbar {
 		display: flex;
     	justify-content: space-between;
 		height: 80px;
 		line-height: 80px;
 		display: flex;
 
-		.header__navbar__logo {
+		.navbar__logo {
 			padding-top: 15px;
 		}
 		
-		.header__navbar__menu {
+		.navbar__menu {
 			display: flex;		
 			flex-wrap: wrap;
 			font-size: 13px;
@@ -95,16 +95,16 @@ body {
 		}
 }
                               /* MOB MENU*/
-.header__mobnav {
+.mobnav {
   display: none;
   z-index: 3;
 }
-.header__mobnav__button {
+.mobnav__button {
   font-size: 50px;
   font-weight: 900;
   cursor:pointer;
 }
-.overlay {
+.mobnav__main {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -135,7 +135,7 @@ body {
 		}
 	}	
 }
-.overlay-content {
+.mobnav__main__ul {
   position: relative;
   top: 25%;
   width: 100%;
@@ -144,17 +144,17 @@ body {
 }
 
 @media screen and (max-width: 800px)  {
-	.header__navbar {
-		.header__navbar__menu {
+	.navbar {
+		.navbar__menu {
 			display: none;
 		}
 	}
-	.header__mobnav {
+	.mobnav {
 		display: block;
 	}
 } 
 @media screen and (max-width: 450px) {
-  .overlay {
+  .mobnav__main {
   	overflow-y: auto;
 
 	a {
@@ -169,7 +169,7 @@ body {
 }                    
                                   /* End of the MOB MENU*/                         
 
-.header__main {
+.slider1 {
 	text-align: center;
 	margin: 140px auto 0 auto;
 	max-width: 780px;
@@ -199,7 +199,7 @@ body {
 	}	
 
 }
-.header__main_item:focus {
+.slider1__item:focus {
 	outline: 0;
 }
 
@@ -718,7 +718,7 @@ footer {
 			text-align: center;
 		}
 	}
-	.header__main {
+	.slider1 {
 		padding: 0 30px;
     	margin: 50px auto 0;
 	}
